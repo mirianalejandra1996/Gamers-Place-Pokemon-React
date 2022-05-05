@@ -1,0 +1,55 @@
+@use '../../scss/abstracts/' as *;
+
+.item {
+    background-color: $purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5rem;
+    padding: 30px;
+    height: 180px;
+    cursor: pointer;
+    transition: 0.2s ease box-shadow;
+  }
+  
+  .item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .item h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .info .icon-container {
+    display: flex;
+  }
+  
+  .info .icon-container .circle-type {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info .icon-container .circle-type .format-icon {
+    font-size: 15px;
+  }
+  
+  .item > img {
+    width: 150px;
+  }
+  
+  .item > h2 {
+    font-size: 30px;
+    color: $white;
+  }

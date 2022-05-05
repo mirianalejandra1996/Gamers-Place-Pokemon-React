@@ -1,0 +1,7 @@
+@use '../../scss/abstracts/' as *;
+
+h1 {
+    color: $white;
+    font-size: $fontSizeLarge;
+    font-weight: 700;
+}

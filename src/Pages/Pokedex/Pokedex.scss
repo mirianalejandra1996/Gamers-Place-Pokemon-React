@@ -1,0 +1,16 @@
+@use '../../scss/abstracts/' as *;
+
+
+.pokedex-container {
+  
+  grid-template-areas:
+    "pokemons-container"
+    "sidebar";
+  grid-template-rows:  1fr;
+  background-color: $mainColor;
+  display: grid;
+  grid-template-columns:  1fr 2.5fr;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 55px inset;
+  }
+  

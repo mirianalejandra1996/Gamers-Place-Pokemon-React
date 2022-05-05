@@ -1,0 +1,16 @@
+@use '../../scss/abstracts/' as *;
+
+.header {
+  grid-area: header;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    height: 5rem;
+    background-color: $purple;
+    color: $white;
+  }
