@@ -4,7 +4,6 @@
     margin: 1rem 0;
     background-color: $purple;
     border-radius: 2.5rem;
-    height: 40rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -38,11 +37,28 @@
 
 .pokemon__info{
     width: 100%;
-    }
-
-.pokemon__tabs-container {
     display: flex;
-    width: 50%;
-    margin-bottom: 20px;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+
+    .pokemon__tabs-container {
+        display: flex;
+        width: 50%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+      }
+}
+
+// ! Ver en dónde va!
+.pokemon__tab--active {
+    cursor: pointer;
+    color: $white;
+}
+
+.pokemon__tab--inactive {
+    cursor: pointer;
+    color: $lightPurple;
+}
+
+.pokemon__tab--inactive:hover {
+    color: $white;
+}

@@ -9,7 +9,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 body {
@@ -18,7 +18,8 @@ body {
     font-size: $fontSizeNormal;
     line-height: 1.5;
     background-color: $bodyBg;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    // height: 100%;
 }
 
 a {
@@ -43,14 +44,23 @@ li {
     }
 }
 
-
-
-.title {
-    // font-size: $fontSizeMedium;
-    // font-weight: 700;
+h1 {
+    color: $white;
+    font-size: $fontSizeLarge;
+    font-weight: 700;
 }
 
 h2 {
     font-size: $fontSizeMedium;
+    color: $white;
+}
+
+h3 {
+    font-size: $fontSizeMedium;
+    color: $white;
+    margin: 1rem 0;
+}
+
+p {
     color: $white;
 }

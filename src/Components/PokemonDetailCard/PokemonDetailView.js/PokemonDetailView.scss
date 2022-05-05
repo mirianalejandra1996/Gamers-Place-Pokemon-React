@@ -1,0 +1,28 @@
+@use '../../../scss/abstracts/' as *;
+
+.flex{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.buttons-container{
+    display: flex;
+    gap: .5rem;
+}
+
+li {
+    color: $white;
+    margin-bottom: .5rem;
+    .subtitle {
+            font-weight: bold;
+            margin-right: 1rem;
+    }
+
+    .pokeinfo {
+        font-weight: 200;
+    }
+}
+
+.capitalize {
+    text-transform: capitalize;
+  }
