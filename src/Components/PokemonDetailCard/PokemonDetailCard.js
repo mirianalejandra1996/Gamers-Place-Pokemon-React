@@ -2,6 +2,7 @@ import React from "react";
 import "./PokemonDetailCard.scss";
 import PokemonDetailView from "./PokemonDetailView.js/PokemonDetailView";
 import TabsTitles from "../../configs/tabsInfoPokemon.js";
+import PokemonEvolutionView from "./PokemonEvolutionView/PokemonEvolutionView";
 
 export default function PokemonDetailCard() {
   return (
@@ -32,7 +33,8 @@ export default function PokemonDetailCard() {
         {/* Fin de Pestañas */}
       </div>
 
-      <PokemonDetailView />
+      {/* <PokemonDetailView /> */}
+      <PokemonEvolutionView />
     </div>
   );
 }

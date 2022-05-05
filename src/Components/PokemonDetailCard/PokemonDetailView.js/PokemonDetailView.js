@@ -4,8 +4,9 @@ import "./PokemonDetailView.scss";
 
 export default function PokemonDetailView() {
   return (
-    <div>
-      <div className="about sec-detail">
+    <div className="view">
+      {/* Description of the Pokemon */}
+      <div>
         <h3>Description</h3>
         <div className="content">
           <p>
@@ -15,7 +16,8 @@ export default function PokemonDetailView() {
           </p>
         </div>
       </div>
-      <div className="informacion-basica sec-detail">
+      {/* Information of the Pokemon */}
+      <div>
         <h3>Basic Information</h3>
         <div className="content">
           <ul>
@@ -47,7 +49,8 @@ export default function PokemonDetailView() {
           </ul>
         </div>
       </div>
-      <div className="debilidades sec-detail">
+      {/* Weaknesses of the Pokemon */}
+      <div>
         <h3>Weaknesses</h3>
         <div className="buttons-container">
           <ButtonTypeDetail type="fire" color="rgb(249, 118, 108)" />

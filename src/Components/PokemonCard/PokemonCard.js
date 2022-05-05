@@ -3,7 +3,7 @@ import "./PokemonCard.scss";
 
 export default function PokemonCard() {
   return (
-    <div className="item">
+    <div className="card">
       <img src="https://www.serebii.net/pokemongo/pokemon/001.png" />
       <div className="info">
         <div className="info-left">

@@ -7,7 +7,7 @@ export default function Navbar() {
     <header className="header">
       <nav>
         <div className="logo">
-          <h4>PokéCompany</h4>
+          <Link to="/">PokéCompany</Link>
         </div>
       </nav>
     </header>
