@@ -4,12 +4,13 @@
 .pokedex-container {
   
   grid-template-areas:
-    "pokemons-container"
-    "sidebar";
-  grid-template-rows:  1fr;
-  background-color: $mainColor;
-  display: grid;
-  grid-template-columns:  1fr 2.5fr;
-  box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 55px inset;
+        "pokemons-container"
+        "sidebar";
+    grid-template-rows: 1fr;
+    background-color: #27254c;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    box-shadow: rgb(0 0 0 / 80%) 5px 5px 55px inset;
+    padding: 1rem;
   }
   

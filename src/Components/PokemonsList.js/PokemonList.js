@@ -1,5 +1,6 @@
 import React from "react";
 import PokemonCard from "../PokemonCard/PokemonCard";
+import ScrollButton from "../ScrollButton/ScrollButton";
 import Title from "../Title/Title";
 import "./PokemonList.scss";
 
@@ -11,8 +12,36 @@ export default function PokemonList() {
         <div className="pokemons-container__title">
           <Title text="Pokémon List" />
         </div>
-        {/* <h1>Pokemon List</h1> */}
-        <div className="cards-container">
+        <div className="cards-container-pokedex">
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
           <PokemonCard />
           <PokemonCard />
           <PokemonCard />
@@ -20,6 +49,9 @@ export default function PokemonList() {
           <PokemonCard />
           <PokemonCard />
         </div>
+
+        {/* Floating button*/}
+        <ScrollButton />
       </div>
     </main>
   );

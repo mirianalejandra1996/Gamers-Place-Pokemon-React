@@ -2,8 +2,6 @@ import React from "react";
 import typesColors from "../../configs/typesPokemons";
 import ButtonType from "../ButtonType/ButtonType";
 import OptionsButtons from "../OptionsButtons/OptionsButtons";
-import Title from "../Title/Title";
-
 import "./Sidebar.scss";
 
 export default function Sidebar() {
@@ -12,7 +10,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        <Title text="Special Filters" />
+        <h2>Special Filters</h2>
         <div
           className="circle-type"
           style={{ backgroundColor: "rgb(142, 145, 250)" }}
