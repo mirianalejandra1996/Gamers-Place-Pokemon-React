@@ -12,7 +12,9 @@
   justify-content: space-between;
 
   .card__photo-container{
-    width: auto;
+    // width: auto;
+    width: 50%;
+    margin-right: 1rem;
   }
 
   .icon-container {
@@ -30,11 +32,16 @@
     }
   }
 
-  .info{
-    margin: 0rem;
-    font-size: 16px;
-    font-weight: 400;
-    color: $white;
+  .info-container{
+    width: 50%;
+    // width: 60%;
+
+    .info{
+      margin: 0rem;
+      font-size: 16px;
+      font-weight: 400;
+      color: $white;
+    }
   }
 
   .namePokemon{
