@@ -6,7 +6,6 @@ import "./Navbar.scss";
 export default function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
-  // const showSidebar = () => setSidebar(!sidebar);
   const toggleSidebar = () => {
     setSidebar(!sidebar);
     console.log("tocado!", sidebar);
@@ -23,11 +22,6 @@ export default function Navbar() {
         </div>
       </nav>
       <Sidebar isExtended={sidebar} toggleExtension={toggleSidebar} />
-      {/* ---------------- */}
-      {/* <div className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <p>X</p>
-        <button>Hola</button>
-      </div> */}
     </header>
   );
 }

@@ -19,5 +19,3 @@ export default function Pokemon() {
     </div>
   );
 }
-
-// {/* <button>Go back</button> */}

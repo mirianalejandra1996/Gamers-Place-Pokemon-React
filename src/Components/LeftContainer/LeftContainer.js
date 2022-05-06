@@ -1,7 +1,5 @@
 import React from "react";
 import typesColors from "../../configs/typesPokemons";
-import ButtonType from "../ButtonType/ButtonType";
-import OptionsButtons from "../OptionsButtons/OptionsButtons";
 import "./LeftContainer.scss";
 import SpecialFilter from "../SpecialFilter/SpecialFilter";
 

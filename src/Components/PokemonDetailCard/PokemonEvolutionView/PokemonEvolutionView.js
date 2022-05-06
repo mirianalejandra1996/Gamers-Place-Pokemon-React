@@ -3,9 +3,7 @@ import PokemonCard from "../../PokemonCard/PokemonCard";
 import "./PokemonEvolutionView.scss";
 
 export default function PokemonEvolutionView() {
-  //   return <div className="view">PokemonEvolutionView</div>;
   return (
-    // <div>
     <div className="cards-container">
       <PokemonCard />
       <PokemonCard />
@@ -14,6 +12,5 @@ export default function PokemonEvolutionView() {
       <PokemonCard />
       <PokemonCard />
     </div>
-    // </div>
   );
 }

@@ -1,56 +1,55 @@
 @use '../../scss/abstracts/' as *;
 
 .card {
-    // background-color: $purple;
-    background-color: rgba(255, 255, 255, 0.059);;
+  background-color: rgba(255, 255, 255, 0.059);
+  display: flex;
+  align-items: center;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  height: 12rem;
+  cursor: pointer;
+  transition: 0.2s ease box-shadow;
+  justify-content: space-between;
+
+  .card__photo-container{
+    width: auto;
+  }
+
+  .icon-container {
     display: flex;
-    align-cards: center;
-    justify-content: center;
-    border-radius: 2.5rem;
-    padding: 30px;
-    height: 180px;
-    cursor: pointer;
-    transition: 0.2s ease box-shadow;
+
+    .circle-type {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-right: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+
+  .info{
+    margin: 0rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+  }
+
+  .namePokemon{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: $fontSizeSmall;
+    // font-size: 1.2rem;
+  }
+  
   }
   
   .card:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+ 
+
   
-  .card h3 {
-    font-size: 16px;
-    font-weight: 400;
-    color: $white;
-  }
-  .info {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .info .icon-container {
-    display: flex;
-  }
-  
-  .info .icon-container .circle-type {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin-right: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .info .icon-container .circle-type .format-icon {
-    font-size: 15px;
-  }
-  
-  .card > img {
-    width: 150px;
-  }
-  
-  .card > h2 {
-    font-size: 30px;
-    color: $white;
-  }

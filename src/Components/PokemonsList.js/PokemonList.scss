@@ -23,7 +23,6 @@
 .cards-container-pokedex {
   display: grid;
   gap: 15px;
-  grid-auto-rows: 250px;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   height: auto;
@@ -47,7 +46,6 @@
 ::-webkit-scrollbar-thumb
 {
   width: 5rem;
-  // width: .5rem;
 	border-radius: 10px;
 	background-color: rgb(142, 145, 250);
 	background-image: -webkit-linear-gradient(90deg,

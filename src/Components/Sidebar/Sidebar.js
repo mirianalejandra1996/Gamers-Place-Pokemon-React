@@ -3,7 +3,6 @@ import SpecialFilter from "../SpecialFilter/SpecialFilter";
 import "./Sidebar.scss";
 
 export default function Sidebar({ isExtended, toggleExtension }) {
-  //   return <div>Sidebar</div>;
   return (
     <div className={isExtended ? "nav-menu active" : "nav-menu"}>
       <div className="sidebar__header">

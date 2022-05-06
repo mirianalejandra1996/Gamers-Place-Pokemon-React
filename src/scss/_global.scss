@@ -8,12 +8,11 @@
 }
 
 html {
-    // overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
     font-family: $fontFamily;
-    color: $txtColor;
     font-size: $fontSizeNormal;
     line-height: 1.5;
     background-color: $bodyBg;
