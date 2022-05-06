@@ -34,8 +34,8 @@ export default function PokemonDetailCard() {
         {/* Fin de Pestañas */}
       </div>
 
-      {/* <PokemonDetailView /> */}
-      <PokemonEvolutionView />
+      <PokemonDetailView />
+      {/* <PokemonEvolutionView /> */}
     </div>
   );
 }

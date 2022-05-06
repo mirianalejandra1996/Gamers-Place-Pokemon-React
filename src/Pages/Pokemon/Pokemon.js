@@ -3,6 +3,7 @@ import PokemonDetailCard from "../../Components/PokemonDetailCard/PokemonDetailC
 import Title from "../../Components/Title/Title";
 import "./Pokemon.scss";
 import { Link } from "react-router-dom";
+import ScrollButton from "../../Components/ScrollButton/ScrollButton";
 
 export default function Pokemon() {
   return (
@@ -11,10 +12,11 @@ export default function Pokemon() {
         <div className="title-container">
           <Title text="Pokémon Detail" smaller={true} />
           <Link className="goback-btn" to="/">
-            Go back
+            {"<"}
           </Link>
         </div>
         <PokemonDetailCard />
+        <ScrollButton />
       </div>
     </div>
   );

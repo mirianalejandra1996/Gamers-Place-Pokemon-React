@@ -1,5 +1,9 @@
 @use '../../../scss/abstracts/' as *;
 
+.view {
+    width: 100%;
+}
+
 .flex{
     display: flex;
     gap: 0.5rem;
@@ -25,4 +29,9 @@ li {
 
 .capitalize {
     text-transform: capitalize;
+  }
+
+  
+  .title--detail{
+    font-size: 1.8rem;
   }

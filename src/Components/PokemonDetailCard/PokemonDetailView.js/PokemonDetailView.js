@@ -7,7 +7,7 @@ export default function PokemonDetailView() {
     <div className="view">
       {/* Description of the Pokemon */}
       <div>
-        <h3>Description</h3>
+        <h3 className="title--detail">Description</h3>
         <div className="content">
           <p>
             Bulbasaur can be seen napping in bright sunlight. There is a seed on
@@ -18,7 +18,7 @@ export default function PokemonDetailView() {
       </div>
       {/* Information of the Pokemon */}
       <div>
-        <h3>Basic Information</h3>
+        <h3 className="title--detail">Basic Information</h3>
         <div className="content">
           <ul>
             <li>
@@ -51,7 +51,7 @@ export default function PokemonDetailView() {
       </div>
       {/* Weaknesses of the Pokemon */}
       <div>
-        <h3>Weaknesses</h3>
+        <h3 className="title--detail">Weaknesses</h3>
         <div className="buttons-container">
           <ButtonTypeDetail type="fire" color="rgb(249, 118, 108)" />
           <ButtonTypeDetail type="ice" color="rgb(164, 234, 234)" />
