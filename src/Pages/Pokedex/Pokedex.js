@@ -1,12 +1,12 @@
 import React from "react";
 import PokemonList from "../../Components/PokemonsList.js/PokemonList";
-import Sidebar from "../../Components/Sidebar/Sidebar";
+import LeftContainer from "../../Components/LeftContainer/LeftContainer";
 import "./Pokedex.scss";
 
 export default function Pokedex() {
   return (
     <div className="pokedex-container">
-      <Sidebar />
+      <LeftContainer />
       <PokemonList />
     </div>
   );

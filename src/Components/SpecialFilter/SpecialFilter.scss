@@ -2,22 +2,28 @@
 
 .special-filter__container {
 // .sidebar {
-  margin-top: 1.5rem;
+  // margin-top: 1.5rem;
   grid-area: sidebar;
   display: flex;
-  padding: 3rem 2rem;
+  // padding: 3rem 2rem;
   flex-direction: column;
   background-color: #2c2c57;
   grid-row-start: 1;
   grid-row-end: 1;
-  height: auto;
+  // height: auto;
+  height: -webkit-fill-available;
+  
   border-radius: 2.5rem;
+  width: 100%;
+  max-width: 25rem;
+  padding: 1rem;
 
 //   &__header {
   .special-filter__header {
     display: flex;
     justify-content: space-between;
     color: $white;
+    align-items: center;
 
     .circle-type {
       width: 25px;
@@ -42,4 +48,16 @@
     height: 2rem;
   }
 
- 
+  @media (max-width:  768px) {
+    .special-filter__header {
+      margin-bottom: 0.5rem;
+    }
+
+    .special-filter__container {
+      padding: 0rem;
+
+      .types_container{
+        margin-top: 0rem;
+      }
+    }
+  }

@@ -6,11 +6,25 @@
 
 nav {
     display: flex;
-    justify-content: space-between;
     padding: 0 30px;
     align-items: center;
     transition: all 0.3s ease-in-out;
     height: 5rem;
     background-color: $purple;
     color: $white;
+
+    .header__hamburger-container{
+      margin-right: 2rem;
+      display: none;
+      
+    }
+  }
+  
+  @media (max-width:  768px) {
+
+    nav {
+      .header__hamburger-container{
+        display: flex;
+      }
+    }
   }
