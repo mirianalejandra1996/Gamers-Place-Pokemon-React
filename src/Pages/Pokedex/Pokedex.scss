@@ -3,14 +3,26 @@
 
 .pokedex-container {
   
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
-        "pokemons-container"
-        "sidebar";
-    grid-template-rows: 1fr;
+  "sidebar main-container";
     background-color: #27254c;
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
     box-shadow: rgb(0 0 0 / 80%) 5px 5px 55px inset;
     padding: 1rem;
   }
   
+  @media (max-width:  768px) {
+    .pokedex-container {
+  
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "main-container";
+        background-color: #27254c;
+        display: grid;
+        box-shadow: rgb(0 0 0 / 80%) 5px 5px 55px inset;
+        padding: 1rem;
+      }
+  }
