@@ -1,1 +1,5 @@
 @use '../../scss/abstracts/' as *;
+
+.smaller {
+    font-size: $fontSizeMedium;
+}

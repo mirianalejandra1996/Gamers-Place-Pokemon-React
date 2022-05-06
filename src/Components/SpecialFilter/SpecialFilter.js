@@ -5,8 +5,6 @@ import OptionsButtons from "../OptionsButtons/OptionsButtons";
 import "./SpecialFilter.scss";
 
 export default function SpecialFilter() {
-  console.log(typesColors);
-
   return (
     <div className="special-filter__container">
       <div className="special-filter__header">

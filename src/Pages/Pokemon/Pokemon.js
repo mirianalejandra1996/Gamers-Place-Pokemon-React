@@ -9,7 +9,7 @@ export default function Pokemon() {
     <div className="pokemon-detail__main-container">
       <div className="pokemon-container__title">
         <div className="title-container">
-          <Title text="Pokémon Detail" />
+          <Title text="Pokémon Detail" smaller={true} />
           <Link className="goback-btn" to="/">
             Go back
           </Link>

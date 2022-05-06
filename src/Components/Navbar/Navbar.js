@@ -8,7 +8,6 @@ export default function Navbar() {
 
   const toggleSidebar = () => {
     setSidebar(!sidebar);
-    console.log("tocado!", sidebar);
   };
 
   return (

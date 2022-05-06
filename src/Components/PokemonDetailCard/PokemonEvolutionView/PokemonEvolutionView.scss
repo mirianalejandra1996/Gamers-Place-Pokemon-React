@@ -1,11 +1,10 @@
 .cards-container {
-    display: grid;
-    gap: 15px;
-    grid-auto-rows: 250px;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    height: auto;
-    padding: 1rem 0;
-    row-gap: 15px;
-    width: 100%;
+  display: grid;
+  gap: 15px;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  height: auto;
+  padding: 1rem 0;
+  row-gap: 15px;
+  width: 100%;
   }

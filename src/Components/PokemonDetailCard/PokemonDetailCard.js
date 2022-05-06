@@ -12,6 +12,7 @@ export default function PokemonDetailCard() {
         <img
           className="pokemon__photo"
           src="https://www.serebii.net/pokemongo/pokemon/001.png"
+          alt="pokemon-photo"
         />
       </div>
 
