@@ -1,19 +1,15 @@
 import React, { useState, useContext, createContext, useEffect } from "react";
 
-const CartP = createContext();
+const Pokedex = createContext();
 
-const CartContextP = ({ children }) => {
+const PokeContext = ({ children }) => {
   const [pokemons, setPokemons] = useState([]);
-  const [loading, setLoading] = useState(true);
   // const [url, setUrl] = useState(
   //   "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
   //   );
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon?limit=20");
 
   const getAllPokemons = async (url) => {
-    // TODO: Create a loader
-    setLoading(true);
-
     const response = await fetch(url);
     const data = await response.json();
 
@@ -32,56 +28,16 @@ const CartContextP = ({ children }) => {
   }, [url]);
 
   return (
-    <CartP.Provider
+    <Pokedex.Provider
       value={{
         pokemons,
-        // cart,
-        // setCart,
-        // clientName,
-        // setClientName,
-        // tableNumber,
-        // setTableNumber,
-        // isClean,
-        // setIsClean,
       }}
     >
       {children}
-    </CartP.Provider>
+    </Pokedex.Provider>
   );
-
-  //   !-------------------------
-  //   const [cart, setCart] = useState([]);
-  //   const [clientName, setClientName] = useState("CONTEXTO POKEMON");
-  //   const [tableNumber, setTableNumber] = useState("POKEE 000000000000000000000");
-  //   const [isClean, setIsClean] = useState(false);
-
-  //   useEffect(() => {}, [tableNumber, clientName, isClean]);
-
-  //   useEffect(() => {
-  //     if (isClean) {
-  //       setTableNumber("");
-  //       setClientName("");
-  //     }
-  //   }, [isClean]);
-
-  //   return (
-  //     <CartP.Provider
-  //       value={{
-  //         cart,
-  //         setCart,
-  //         clientName,
-  //         setClientName,
-  //         tableNumber,
-  //         setTableNumber,
-  //         isClean,
-  //         setIsClean,
-  //       }}
-  //     >
-  //       {children}
-  //     </CartP.Provider>
-  //   );
 };
 
-export default CartContextP;
+export default PokeContext;
 
-export const useCartP = () => useContext(CartP);
+export const usePokedex = () => useContext(Pokedex);
