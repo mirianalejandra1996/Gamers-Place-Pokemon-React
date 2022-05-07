@@ -2,7 +2,6 @@ import React from "react";
 import "./PokemonDetailCard.scss";
 import PokemonDetailView from "./PokemonDetailView.js/PokemonDetailView";
 import TabsTitles from "../../configs/tabsInfoPokemon.js";
-import PokemonEvolutionView from "./PokemonEvolutionView/PokemonEvolutionView";
 
 export default function PokemonDetailCard({ pokemonData }) {
   console.log("si llego, ", pokemonData);
@@ -22,7 +21,6 @@ export default function PokemonDetailCard({ pokemonData }) {
         {/* Los taps que muestran las vistas detalladas de cada pokemon */}
         <div className="pokemon__tabs-container">
           {TabsTitles.map((title, index) => (
-            // <h2 className="pokemon__tab--active" key={`title-${index}`}>
             <h2
               className={
                 index === 0 ? "pokemon__tab--active" : "pokemon__tab--inactive"
@@ -37,7 +35,6 @@ export default function PokemonDetailCard({ pokemonData }) {
       </div>
 
       <PokemonDetailView description={pokemonData} />
-      {/* <PokemonEvolutionView evolutions={pokemonData} /> */}
     </div>
   );
 }
