@@ -36,10 +36,10 @@ export default function OptionsButtons({ optionsType }) {
         return types.every((e) => pokemonTypes.includes(e));
       }
     });
-    console.log("ya ta filtradito", pokemonsFiltered);
+    console.log("it is filtered now", pokemonsFiltered);
   };
 
-  console.log("mira mis opciones seleccionadas!, ", types);
+  console.log("Look my selected options!, ", types);
   // console.log("pokemaaaaaaaaan, ", pokemons);
 
   return (
