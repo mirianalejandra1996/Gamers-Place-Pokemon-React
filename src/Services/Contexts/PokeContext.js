@@ -3,11 +3,9 @@ import React, { useState, useContext, createContext, useEffect } from "react";
 const Pokedex = createContext();
 
 const PokeContext = ({ children }) => {
-  const [pokemons, setPokemons] = useState([]);
+  const [pokemons, setPokemons] = useState([]); //! INITIAL FETCH
+  const [allPokemons, setAllPokemons] = useState([]); //! I WANT THIS
   const [types, setTypes] = useState([]);
-  // const [url, setUrl] = useState(
-  //   "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
-  //   );
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon?limit=20");
 
   const getAllPokemons = async (url) => {
@@ -19,14 +17,35 @@ const PokeContext = ({ children }) => {
         `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
       );
       const dataPokemon = await responsePokemon.json();
-      setPokemons((currentList) => [...currentList, dataPokemon]);
+      setAllPokemons((currentList) => [...currentList, dataPokemon]);
     });
+    console.log(allPokemons);
     console.log(pokemons);
   };
 
   useEffect(() => {
     getAllPokemons(url);
+    // }, [url, types]);
   }, [url]);
+
+  useEffect(() => {
+    // if (types.length !== 0) {
+    const pokemonsFiltered = allPokemons.filter((pokemon) => {
+      // const pokemonsFiltered = pokemons.filter((pokemon) => {
+      let pokemonTypes = pokemon.types.map((typePoke) => {
+        return typePoke.type.name;
+      }); // Retorna el tipo que posee el pokemon exmp ["fire", "water"]
+
+      if (types.length === 1) {
+        return pokemonTypes.includes(types[0]);
+      } else {
+        return types.every((e) => pokemonTypes.includes(e));
+      }
+    });
+
+    console.log("it is filtered now", pokemonsFiltered);
+    setPokemons(pokemonsFiltered);
+  }, [allPokemons, types]);
 
   return (
     <Pokedex.Provider

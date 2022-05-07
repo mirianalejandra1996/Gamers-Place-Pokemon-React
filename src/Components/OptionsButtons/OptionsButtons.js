@@ -24,19 +24,19 @@ export default function OptionsButtons({ optionsType }) {
     }
     // !-------------------------------------------------------------------
 
-    debugger;
-    const pokemonsFiltered = pokemons.filter((pokemon) => {
-      let pokemonTypes = pokemon.types.map((typePoke) => {
-        return typePoke.type.name;
-      }); // Retorna el tipo que posee el pokemon exmp ["fire", "water"]
+    // debugger;
+    // const pokemonsFiltered = pokemons.filter((pokemon) => {
+    //   let pokemonTypes = pokemon.types.map((typePoke) => {
+    //     return typePoke.type.name;
+    //   }); // Retorna el tipo que posee el pokemon exmp ["fire", "water"]
 
-      if (types.length === 1) {
-        return pokemonTypes.includes(types[0]);
-      } else {
-        return types.every((e) => pokemonTypes.includes(e));
-      }
-    });
-    console.log("it is filtered now", pokemonsFiltered);
+    //   if (types.length === 1) {
+    //     return pokemonTypes.includes(types[0]);
+    //   } else {
+    //     return types.every((e) => pokemonTypes.includes(e));
+    //   }
+    // });
+    // console.log("it is filtered now", pokemonsFiltered);
   };
 
   console.log("Look my selected options!, ", types);
