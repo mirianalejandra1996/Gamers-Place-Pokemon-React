@@ -1,0 +1,43 @@
+export const typesColors = [
+  "fire",
+  "grass",
+  "electric",
+  "water",
+  "ground",
+  "fairy",
+  "poison",
+  "bug",
+  "dragon",
+  "psychic",
+  "flying",
+  "fighting",
+  "normal",
+  "steel",
+  "rock",
+  "dark",
+  "ghost",
+  "ice",
+];
+
+export const colors = {
+  fire: "#f9766c",
+  grass: "#2cdbb2",
+  electric: "#fbe043",
+  water: "#2f9afe",
+  ground: "#be875e",
+  fairy: "#ffbbbb",
+  poison: "#8e91fa",
+  bug: "#9abf83",
+  dragon: "#fba96c",
+  psychic: "#fface5",
+  flying: "#ffd19e",
+  fighting: "#e3c1a8",
+  normal: "#e1e2ff",
+  steel: "#a1bebe",
+  rock: "#e5e5e5",
+  dark: "#a1a1a1",
+  ghost: "#aa7ab6",
+  ice: "#a4eaea",
+};
+
+// export default typesColors;
