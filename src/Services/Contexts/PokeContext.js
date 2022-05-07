@@ -4,6 +4,7 @@ const Pokedex = createContext();
 
 const PokeContext = ({ children }) => {
   const [pokemons, setPokemons] = useState([]);
+  const [types, setTypes] = useState([]);
   // const [url, setUrl] = useState(
   //   "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
   //   );
@@ -31,6 +32,8 @@ const PokeContext = ({ children }) => {
     <Pokedex.Provider
       value={{
         pokemons,
+        types,
+        setTypes,
       }}
     >
       {children}

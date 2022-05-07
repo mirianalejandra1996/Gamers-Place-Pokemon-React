@@ -28,7 +28,7 @@ export default function ScrollButton() {
         className={"go-top__button " + (visible ? "show" : "")}
         onClick={scrollToTop}
       >
-        <p className="go-top__icon">@</p>
+        <p className="go-top__icon">⬆</p>
       </div>
     </div>
   );

@@ -14,14 +14,14 @@ export default function SpecialFilter() {
           className="circle-type"
           style={{ backgroundColor: "rgb(142, 145, 250)" }}
         >
-          <span className="format-icon icon-poison"></span>
+          <span className="format-icon icon-poison">🧹</span>
         </div>
       </div>
       <div className="types_container">
         {typesColors.map((type, index) => (
           <div className="button__container" key={`type-${index}`}>
             <ButtonType type={type} />
-            <OptionsButtons />
+            <OptionsButtons optionsType={type} />
           </div>
         ))}
       </div>
