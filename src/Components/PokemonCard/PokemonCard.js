@@ -1,13 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { colors } from "../../configs/typesPokemons";
 import { pad } from "../../helpers/formatter";
 import "./PokemonCard.scss";
 
 export default function PokemonCard({ pokemon }) {
   // console.log(pokemon);
+  // onClick={HandleAddToCart}
+
+  let navigate = useNavigate();
+
+  const checkPokemon = () => {
+    console.log("viendo");
+    navigate("pokemon/:id", {
+      state: { pokemon },
+    });
+  };
 
   return (
-    <div className="card">
+    <div className="card" onClick={checkPokemon}>
       <div className="card__photo-container">
         <img src={pokemon.sprites.front_default} alt={pokemon.name} />
       </div>

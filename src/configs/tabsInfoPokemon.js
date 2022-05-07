@@ -1,3 +1,2 @@
-const TabsTitles = ["Details", "Evolutions"];
-// const TabsTitles = ["Details", "Evolutions", "Stats"];
+const TabsTitles = ["Details"];
 export default TabsTitles;

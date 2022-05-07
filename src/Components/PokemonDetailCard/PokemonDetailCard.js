@@ -4,15 +4,17 @@ import PokemonDetailView from "./PokemonDetailView.js/PokemonDetailView";
 import TabsTitles from "../../configs/tabsInfoPokemon.js";
 import PokemonEvolutionView from "./PokemonEvolutionView/PokemonEvolutionView";
 
-export default function PokemonDetailCard() {
+export default function PokemonDetailCard({ pokemonData }) {
+  console.log("si llego, ", pokemonData);
+
   return (
     <div className="pokemon__card">
       <div className="pokemon__photo-container">
         <div className="pokemon__background"></div>
         <img
           className="pokemon__photo"
-          src="https://www.serebii.net/pokemongo/pokemon/001.png"
-          alt="pokemon-photo"
+          src={pokemonData.sprites.front_default}
+          alt={pokemonData.name}
         />
       </div>
 
@@ -34,8 +36,8 @@ export default function PokemonDetailCard() {
         {/* Fin de Pestañas */}
       </div>
 
-      <PokemonDetailView />
-      {/* <PokemonEvolutionView /> */}
+      <PokemonDetailView description={pokemonData} />
+      {/* <PokemonEvolutionView evolutions={pokemonData} /> */}
     </div>
   );
 }

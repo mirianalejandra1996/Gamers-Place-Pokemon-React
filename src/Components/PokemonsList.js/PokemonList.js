@@ -7,24 +7,23 @@ import "./PokemonList.scss";
 export default function PokemonList() {
   const [pokemons, setPokemons] = useState([]);
   const [loading, setLoading] = useState(true);
+  // const [url, setUrl] = useState(
+  //   "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
+  //   );
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon?limit=20");
 
   const getAllPokemons = async (url) => {
-    console.log("me llaman");
     // TODO: Create a loader
     setLoading(true);
 
     const response = await fetch(url);
     const data = await response.json();
 
-    // console.log("tate, ", data.results);
-
     data.results.forEach(async (pokemon) => {
       const responsePokemon = await fetch(
         `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`
       );
       const dataPokemon = await responsePokemon.json();
-      console.log(dataPokemon);
       setPokemons((currentList) => [...currentList, dataPokemon]);
     });
   };
@@ -40,7 +39,6 @@ export default function PokemonList() {
         <div className="pokemons-container__title">
           <Title text="Pokémon List" />
         </div>
-        {/* <div className="cards-container-pokedex"></div> */}
         <div className="cards-container-pokedex">
           {pokemons
             .sort((a, b) => a.id - b.id)
