@@ -1,4 +1,5 @@
 import React from "react";
+import { colors } from "../../configs/typesPokemons";
 import { pad } from "../../helpers/formatter";
 import "./PokemonCard.scss";
 
@@ -15,18 +16,20 @@ export default function PokemonCard({ pokemon }) {
         <h3 className="info"># {pad(pokemon.id, 3)}</h3>
         <h3 className="info">CP: {pokemon.stats[3].base_stat}</h3>
         <div className="info icon-container">
-          <div
-            className="circle-type"
-            style={{ backgroundColor: "rgb(44, 219, 178)" }}
-          >
-            <span className="format-icon icon-grass"></span>
-          </div>
-          <div
-            className="circle-type"
-            style={{ backgroundColor: "rgb(142, 145, 250)" }}
-          >
-            <span className="format-icon icon-poison"></span>
-          </div>
+          {pokemon.types.map((type, index) => {
+            return (
+              <div
+                key={`type-${index}`}
+                className="circle-type"
+                style={{
+                  backgroundColor: colors[type.type.name],
+                }}
+              >
+                <span className="format-icon icon-grass"></span>
+              </div>
+            );
+          })}
+          <span className="format-icon icon-poison"></span>
         </div>
       </div>
     </div>
