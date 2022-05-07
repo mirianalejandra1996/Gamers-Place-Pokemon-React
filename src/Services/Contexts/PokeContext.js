@@ -6,7 +6,10 @@ const PokeContext = ({ children }) => {
   const [pokemons, setPokemons] = useState([]); //! INITIAL FETCH
   const [allPokemons, setAllPokemons] = useState([]); //! I WANT THIS
   const [types, setTypes] = useState([]);
-  const [url] = useState("https://pokeapi.co/api/v2/pokemon?limit=20");
+  // const [url] = useState("https://pokeapi.co/api/v2/pokemon?limit=100");
+  const [url] = useState(
+    "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
+  );
 
   const getAllPokemons = async (url) => {
     const response = await fetch(url);

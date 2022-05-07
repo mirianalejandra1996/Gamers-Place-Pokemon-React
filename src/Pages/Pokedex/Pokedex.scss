@@ -11,7 +11,9 @@
     display: grid;
     box-shadow: rgb(0 0 0 / 80%) 5px 5px 55px inset;
     padding: 1rem;
+    min-height: 100vh;
   }
+  
   
   @media (max-width:  768px) {
     .pokedex-container {

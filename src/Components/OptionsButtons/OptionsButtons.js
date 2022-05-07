@@ -31,7 +31,9 @@ export default function OptionsButtons({ optionsType }) {
           key={`options-${index}`}
           onClick={addFilter}
           className={
-            "circle-type " + (types.includes(optionsType) ? "active" : "")
+            "circle-type " +
+            (types.includes(optionsType) ? "active " : "") +
+            "pointer"
           }
           style={{
             backgroundColor: colors[optionsType],
