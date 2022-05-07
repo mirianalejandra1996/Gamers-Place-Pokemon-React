@@ -2,6 +2,7 @@
 
 .special-filter__container {
   grid-area: sidebar;
+ 
   display: flex;
   flex-direction: column;
   background-color: #2c2c57;
@@ -50,7 +51,7 @@
 
     .special-filter__container {
       padding: 0rem;
-
+      grid-area: nothing;
       .types_container{
         margin-top: 0rem;
       }

@@ -8,10 +8,8 @@ import ScrollButton from "../../Components/ScrollButton/ScrollButton";
 
 export default function Pokemon() {
   let location = useLocation();
-  const { state, pathname } = location;
+  const { state } = location;
   const { pokemon } = state;
-
-  console.log("pokemon!!,", pokemon, pathname);
 
   return (
     <div className="pokemon-detail__main-container">
@@ -19,7 +17,7 @@ export default function Pokemon() {
         <div className="title-container">
           <Title text="Pokémon Detail" smaller={true} />
           <Link className="goback-btn" to="/">
-            {"<"}
+            {"↪"}
           </Link>
         </div>
         <PokemonDetailCard pokemonData={pokemon} />

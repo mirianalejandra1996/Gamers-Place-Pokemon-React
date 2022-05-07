@@ -5,13 +5,9 @@ import { pad } from "../../helpers/formatter";
 import "./PokemonCard.scss";
 
 export default function PokemonCard({ pokemon }) {
-  // console.log(pokemon);
-  // onClick={HandleAddToCart}
-
   let navigate = useNavigate();
 
   const checkPokemon = () => {
-    console.log("viendo");
     navigate("pokemon/:id", {
       state: { pokemon },
     });

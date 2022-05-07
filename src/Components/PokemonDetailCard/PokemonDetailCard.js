@@ -4,8 +4,6 @@ import PokemonDetailView from "./PokemonDetailView.js/PokemonDetailView";
 import TabsTitles from "../../configs/tabsInfoPokemon.js";
 
 export default function PokemonDetailCard({ pokemonData }) {
-  console.log("si llego, ", pokemonData);
-
   return (
     <div className="pokemon__card">
       <div className="pokemon__photo-container">

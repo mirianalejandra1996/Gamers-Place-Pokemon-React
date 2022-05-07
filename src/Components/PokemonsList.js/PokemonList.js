@@ -9,8 +9,6 @@ import "./PokemonList.scss";
 export default function PokemonList() {
   const { pokemons } = usePokedex();
 
-  console.log("Pokemons!", pokemons);
-
   return (
     <main className="main-container">
       <div className="gallery-container"></div>

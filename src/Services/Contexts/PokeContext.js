@@ -19,8 +19,6 @@ const PokeContext = ({ children }) => {
       const dataPokemon = await responsePokemon.json();
       setAllPokemons((currentList) => [...currentList, dataPokemon]);
     });
-    console.log(allPokemons);
-    console.log(pokemons);
   };
 
   useEffect(() => {
@@ -43,7 +41,6 @@ const PokeContext = ({ children }) => {
       }
     });
 
-    console.log("it is filtered now", pokemonsFiltered);
     setPokemons(pokemonsFiltered);
   }, [allPokemons, types]);
 

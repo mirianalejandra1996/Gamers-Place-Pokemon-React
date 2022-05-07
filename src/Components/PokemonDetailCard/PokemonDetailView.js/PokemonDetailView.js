@@ -5,8 +5,6 @@ import ButtonTypeDetail from "../../ButtonTypeDetail/ButtonTypeDetail";
 import "./PokemonDetailView.scss";
 
 export default function PokemonDetailView({ description }) {
-  // console.log(description.weight);
-
   return (
     <div className="view">
       {/* Information of the Pokemon */}
