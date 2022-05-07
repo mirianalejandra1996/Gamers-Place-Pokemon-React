@@ -6,7 +6,7 @@ const PokeContext = ({ children }) => {
   const [pokemons, setPokemons] = useState([]); //! INITIAL FETCH
   const [allPokemons, setAllPokemons] = useState([]); //! I WANT THIS
   const [types, setTypes] = useState([]);
-  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon?limit=20");
+  const [url] = useState("https://pokeapi.co/api/v2/pokemon?limit=20");
 
   const getAllPokemons = async (url) => {
     const response = await fetch(url);
@@ -23,16 +23,13 @@ const PokeContext = ({ children }) => {
 
   useEffect(() => {
     getAllPokemons(url);
-    // }, [url, types]);
   }, [url]);
 
   useEffect(() => {
-    // if (types.length !== 0) {
     const pokemonsFiltered = allPokemons.filter((pokemon) => {
-      // const pokemonsFiltered = pokemons.filter((pokemon) => {
       let pokemonTypes = pokemon.types.map((typePoke) => {
         return typePoke.type.name;
-      }); // Retorna el tipo que posee el pokemon exmp ["fire", "water"]
+      }); // Returns an array of types, example ["fire", "water"]
 
       if (types.length === 1) {
         return pokemonTypes.includes(types[0]);
