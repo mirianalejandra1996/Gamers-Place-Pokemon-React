@@ -1,0 +1,56 @@
+@use '../../scss/abstracts/' as *;
+
+.main-container {
+    grid-area: main-container;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+
+    .gallery-container{
+      height: 20rem;
+      border-radius: 2.5rem;
+      background-image: url("../../Assets/images/pokemongames-banner.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .pokemons-container__title {
+      margin: 1rem 0;
+    }
+  }
+
+.cards-container-pokedex {
+  display: grid;
+  gap: 15px;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  height: auto;
+  padding: 1rem 0;
+  row-gap: 15px;
+  width: 100%;
+}
+
+// Custom scrollbar
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb
+{
+  width: 5rem;
+	border-radius: 10px;
+	background-color: rgb(142, 145, 250);
+	background-image: -webkit-linear-gradient(90deg,
+											  transparent,
+											  rgba(0, 0, 0, 0.4) 50%,
+											  transparent,
+											  transparent)
+}

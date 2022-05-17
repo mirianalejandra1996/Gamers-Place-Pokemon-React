@@ -1,0 +1,21 @@
+@use '../../scss/abstracts/' as *;
+
+.type-btn {
+  width: 60%;
+    margin: 5px 2px;
+    cursor: pointer;
+    transition: 0.2s ease box-shadow;
+    color: #fff;
+    font-size: $fontSizeNormal;
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.type-btn:hover {
+  background-color: blueviolet;
+
+}
+

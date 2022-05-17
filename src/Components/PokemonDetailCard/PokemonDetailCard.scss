@@ -1,0 +1,81 @@
+@use '../../scss/abstracts/' as *;
+
+.pokemon__card {
+    margin: 1rem 0;
+    background-color: $purple;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pokemon__photo-container{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        margin-bottom: 2rem;
+
+        .pokemon__background{
+            background-color: rgba(255, 255, 255, 0.059);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 100%;
+
+        }
+        
+        .pokemon__photo{
+            position: absolute;
+            z-index: 1;
+        }
+       
+    }
+
+    .pokemon__info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        .pokemon__tabs-container {
+            display: flex;
+            width: 50%;
+            margin-bottom: 20px;
+            justify-content: space-between;
+
+            .pokemon__tab--active {
+                cursor: pointer;
+                color: $white;
+            }
+            
+            .pokemon__tab--inactive {
+                cursor: pointer;
+                color: $lightPurple;
+            }
+            
+            .pokemon__tab--inactive:hover {
+                color: $white;
+            }
+
+          }
+    }
+
+
+}
+
+@media (max-width:  768px) {
+
+    .pokemon__card {
+        padding: 2rem 1rem;
+
+        .pokemon__info{
+            .pokemon__tabs-container {
+             width: 100%;
+              }
+        }
+    }
+  }
+
+
+
+
+  

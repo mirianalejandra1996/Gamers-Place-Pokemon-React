@@ -1,0 +1,36 @@
+@use '../../scss/abstracts/' as *;
+// nav-menu active" : "nav-menu
+
+.nav-menu{
+    background-color: $purple;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: .85s;
+    z-index: 2;
+    max-width: 25rem;
+    padding: 2rem;
+
+    .sidebar__header{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: .35s;
+}
+
+@media (max-width:  768px) {
+    .nav-menu{
+        max-width: 25rem;
+        padding: 1rem 2rem 1rem 3rem;
+    }
+}

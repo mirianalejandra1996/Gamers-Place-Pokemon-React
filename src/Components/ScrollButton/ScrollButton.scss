@@ -1,0 +1,68 @@
+@use '../../scss/abstracts/' as *;
+
+.go-top__container{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.go-top__button {
+    width: 0rem;
+    height: 0rem;
+    background: $lightPurple;
+    border-radius: 50%;
+    transform: scale(0);
+    cursor: pointer;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.go-top__button .go-top__icon{
+    position: absolute;
+    font-size: 2rem;
+    transform: scale(0);
+    color: $purple;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show.go-top__button {
+    transform: scale(1);
+    animation: popup .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11;
+}
+
+.show .go-top__icon {
+    transform: scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    100%{
+        width: 4rem;
+        height: 4rem;
+    }
+}
