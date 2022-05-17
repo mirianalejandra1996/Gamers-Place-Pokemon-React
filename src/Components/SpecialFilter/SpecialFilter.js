@@ -13,7 +13,7 @@ export default function SpecialFilter() {
   return (
     <div className="special-filter__container">
       <div className="special-filter__header">
-        <h2>Filters By Type</h2>
+        <h2>Filters By Type 2</h2>
         {/* <h2>Special Filters</h2> */}
         <div
           className="circle-type"
