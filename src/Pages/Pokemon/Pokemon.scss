@@ -1,0 +1,33 @@
+@use '../../scss/abstracts/' as *;
+
+.pokemon-detail__main-container{
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+
+    .pokemon-container__title {
+        width: 100%;
+        padding: 2rem;
+
+        .title-container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .goback-btn {
+            background-color: $lightPurple;
+            border: none;
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: $white;
+            border-radius: 100%;
+        }
+
+    }
+}
+
