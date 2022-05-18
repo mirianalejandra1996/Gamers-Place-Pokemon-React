@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Gamers Place - Pokémon 👾
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue desarrollado con React js, usando el comando [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Desafío técnico de Cura Deuda
 
-In the project directory, you can run:
+Este desafío técnico con duración de 2 días consiste en el desarrollo de una aplicación responsiva de alguna de las siguientes temáticas.
 
-### `npm start`
++ Pokedex (https://pokeapi.co/)
++ Age of empires II (https://age-of-empires-2-api.herokuapp.com/docs/)
++ COVID-19 (https://github.com/M-Media-Group/Covid-19-API)
++ AudioDB (https://www.theaudiodb.com/api_guide.php)
++ Weather (https://www.metaweather.com/api/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instrucciones
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
++ Selecciona alguna de las temáticas a desarrollar.
++ Intenta cumplir la mayor cantidad de puntos posibles de la prueba, no son obligatorios ni se tienen que cumplir en ese orden, pero entre más resuelvas, podremos conocer mejor tus habilidades.
++ Evita copiar código de internet, nos daremos cuenta.
++ Procura que tu código sea claro y legible, será evaluado.
++ Si lo consideras necesario, documenta las funciones, métodos o bloques de código que sientas que son importantes.
 
-### `npm test`
+## Consideraciones
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
++ Asume que tu código se irá a producción y que pasará por code review.
++ Se claro y preciso en cómo debe desplegarse tu proyecto.
+Diviertete creando.
 
-### `npm run build`
+##  Puntos a cubrir
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
++ Diseña un sitio web full responsive sin utilizar frameworks como Bootstrap o Foundation, el diseño es a tu elección.
++ Conéctate a alguna de las API proporcionadas en las temáticas.
++ Agrega la opción de búsqueda de información.
++ Interactúa con la información obtenida del API, flujo básico de navegación de recursos.
++ Agrega un menú de hamburguesa y un botón flotante.
++ Añade estados.
++ Añade Redux.
++ Muestra tu proyecto live en alguna plataforma en la nube.
++ Agrega un preprocesador de estilos.
++ Empaqueta tu aplicación en un contenedor de Docker.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requisitos mínimos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
++ Entrega de código en repositorio (compartir link en GitHub, Bitbucket o similar)
++ Instrucciones de despliegue del proyecto y todas las consideraciones necesarias.
 
-### `npm run eject`
+## Resultado Final
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Link para la video demostración móvil [aquí](https://www.kapwing.com/videos/62843b47d8ef9400d70c3e71)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Link para la video demostrción de escritorio [aquí](https://www.kapwing.com/videos/62843c3b0acf1600d0382897)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Esta aplicación está desplegada en [Netlify](https://www.netlify.com/), del cual tienes acceso al siguiente [Link de demostración](https://gamers-place-pokemon.netlify.app/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+https://gamers-place-pokemon.netlify.app/
 
-## Learn More
+## Obtener el repositorio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+En caso desees tener el repositorio localmente debes hacer:
+1. Clonar el repositorio
+2. En tu terminal escribir `npm install` para instalar todas las dependencias necesarias del package json.
+3. Para levantar localmente la aplicación escribir `npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Autor 🎇
 
-### Code Splitting
+[🙋🏽‍♀️ Mirian Alejandra Arévalo](https://github.com/mirianalejandra1996).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📧 Contáctame: mirianalejandra1996@gmail.com
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
