@@ -46,13 +46,13 @@ Diviertete creando.
 
 ## Resultado Final
 
-Link para la video demostración móvil [aquí](https://www.kapwing.com/videos/62843b47d8ef9400d70c3e71)
+Link para la video demostración móvil <a target="_blank" href="https://www.kapwing.com/videos/62843b47d8ef9400d70c3e71" rel="desktop">aquí</a>
 
-Link para la video demostrción de escritorio [aquí](https://www.kapwing.com/videos/62843c3b0acf1600d0382897)
+Link para la video demostrción de escritorio <a target="_blank" href="https://www.kapwing.com/videos/62843c3b0acf1600d0382897" rel="desktop">aquí</a>
 
-Esta aplicación está desplegada en [Netlify](https://www.netlify.com/), del cual tienes acceso al siguiente [Link de demostración](https://gamers-place-pokemon.netlify.app/)
+Esta aplicación está desplegada en [Netlify](https://www.netlify.com/), del cual tienes acceso al siguiente <a target="_blank" href="https://gamers-place-pokemon.netlify.app/" rel="game">link de demostración</a>
 
-https://gamers-place-pokemon.netlify.app/
+👉 <a target="_blank" href="https://gamers-place-pokemon.netlify.app/" rel="game">Gamers Place 👾 </a>
 
 ## Obtener el repositorio
 
